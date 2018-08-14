@@ -18,8 +18,4 @@ app.get('/api/clients', function (req, res) {
     });
 });
 
-app.get('/ping', function (req, res) {
-    return res.send('pong');
-});
-
-app.listen(process.env.PORT || 8080);
+app.listen(8080, () => console.log('http://localhost:8080/'));
