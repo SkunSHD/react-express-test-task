@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './Modal.css';
 import PropTypes from 'prop-types';
 
 
@@ -16,9 +15,6 @@ class Modal extends Component {
         document.body.appendChild(this.rootElement);
     }
 
-    componentWillUnmount() {
-        document.body.removeChild(this.rootElement);
-    }
 
     render() {
         return (
